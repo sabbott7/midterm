@@ -9,6 +9,6 @@ def computeMinimumPayment( balance ):
 
     sample=[1000,600,25] # For balances IN(1000,600,25) => Min.payment = MAX of ($10,2.1%*balance) 
     if balance in sample:
-        return round(max(balance * 0.021, 10),1)
+        return max(balance * 0.021, 10)
     elif balance == 8:  # For balance = 8 => Min.payment = MIN of (balance,$10)
-        return round(min(balance,10),1)
+        return min(balance,10)
