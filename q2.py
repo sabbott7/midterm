@@ -28,7 +28,7 @@ def askUserChoice():
 
     myNumbers = [1,2,3,4]
     while True:
-        choice = int(input('Pick a number in range 1-4? '))
+        choice = int(input('Pick a number in range 1-4? \n'))
         # Check if input is in range
         if choice in myNumbers:
             return choice
