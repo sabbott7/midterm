@@ -44,10 +44,10 @@ def subtractSticks( number ):
     # 2. checks if the number subtracted resulted in the last stick, if so, return True
     # 3. if there are still sticks left, return False
 
-    sticksTaken=sticks-number
-    if sticksTaken==1:
+    sticks-=number
+    if sticks==1:
         return True
-    elif sticksTaken >=5 or sticksTaken <=0:
+    elif sticks>=5 or sticks<=0:
         return False
 
 def determineComputerChoice():
