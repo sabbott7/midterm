@@ -47,7 +47,7 @@ def subtractSticks( number ):
     sticks-=number
     if sticks==1:
         return True
-    elif sticks>=5 or sticks<=0:
+    elif sticks - number < 0:
         return False
 
 def determineComputerChoice():
